@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        min-height: 100vh;
+        background-color: black;
+    }
+    .container{
+        min-width: 50%;
+        min-height: 82%;
+        /* border: 2px red solid; */
+        box-shadow: 2px -1px 49px 19px rgba(255,255,255,0.75);
+        -webkit-box-shadow: 2px -1px 49px 19px rgba(255,255,255,0.75);
+        -moz-box-shadow: 2px -1px 49px 19px rgba(255,255,255,0.75);
+    }
+    #id1{
+        max-width:98%;
+        min-height:20%;
+        font-size: 50px;
+    }
+    .c1{
+        display: flex;
+        justify-content: space-between;
+        /* padding: 30px; */
+    }
+    .c2{
+        padding: 15px 55px;
+        font-size: 30px;
+        min-width: 25%;
+    }
+    .c3{
+        min-width: 50%;
+    }
+    input{
+        background-color: black;
+        color: white;
+    }
+    .c4{
+        color: aqua;
+    }
+
+   </style>
+</head>
+<body>
+    <div class="container">
+
+        <input type="text"  id="id1" placeholder="Enter">
+        <div class="c1">
+            <input class="c2" type="button" value="1" onclick="id1.value ='1'+id1.value">
+            <input class="c2" type="button" value="2" onclick="id1.value +='2'">
+            <input class="c2" type="button" value="3" onclick="id1.value +='3'">
+            <input class="c2 c4" type="button" value="C" onclick="id1.value =''">
+        </div>
+        <div class="c1">
+            <input class="c2" type="button" value="4" onclick="id1.value +='4'">
+            <input class="c2" type="button" value="5" onclick="id1.value +='5'">
+            <input class="c2" type="button" value="6" onclick="id1.value +='6'">
+            <input class="c2 c4" type="button" value="+" onclick="id1.value +='+'">
+        </div>
+        <div class="c1">
+            <input class="c2" type="button" value="7" onclick="id1.value +='7'">
+            <input class="c2" type="button" value="8" onclick="id1.value +='8'">
+            <input class="c2" type="button" value="9" onclick="id1.value +='9'">
+            <input class="c2 c4" type="button" value="-" onclick="id1.value +='-'">
+        </div>
+        <div class="c1">
+            <input class="c2" type="button" value="0" onclick="id1.value +='0'">
+            <input class="c2 c4" type="button" value="*" onclick="id1.value +='*'">
+            <input class="c2 c4" type="button" value="/" onclick="id1.value +='/'">
+            <input class="c2 c4" type="button" value="." onclick="id1.value +='.'">
+        </div>
+        <div class="c1">
+            <input class="c2 c3 c4" type="button" value="Del" onclick="id1.value =id1.value.slice(0,-1)">
+            <input class="c2 c3 c4" type="button" value="=" onclick="id1.value =eval(id1.value)">
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
